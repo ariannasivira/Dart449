@@ -1,0 +1,399 @@
+@font-face {
+    font-family: DaintyHands;
+    src: url(/Fonts/DaintyHands-Regular.otf);
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+
+.wrapper{
+    scroll-snap-type: y mandatory;
+}
+ 
+.wrapper section{
+    scroll-snap-align: start;
+ }
+
+
+nav{
+position: fixed;
+height: 100vh;
+z-index: 1;
+font-family: DaintyHands;
+text-transform: uppercase;
+font-size: 18pt;
+
+}
+
+a:link{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #00577a;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#d97090;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active{
+    color: #033249;
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    /*padding-top: 10px;*/
+    padding-left: 10px;
+}
+.logopng{
+    height: 45px;
+}
+
+.projects{
+    position: fixed;
+    top: -32px;
+    right: -60px;
+    padding-top: 10px;
+    padding-left: 10px;
+    transform-origin: bottom left;
+    transform: rotate(90deg);
+}
+
+.readings{
+    position: fixed;
+    bottom: -20px;
+    left: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    transform-origin: top left;
+    transform: rotate(270deg);
+}
+
+
+
+.homework{
+    position: fixed;
+    bottom: 0;
+    right: 0%;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.intro{
+    position: relative;
+    background-color: #9ef0f8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.study{
+    width: 100%
+}
+
+
+
+.about{
+    position: relative;
+    height: 100vh;
+    background-color: #9ef0f8;
+    display: flex;
+    align-items: top;
+    padding: 20% 10%;
+    justify-content: center;
+    color: #033249;
+    font-family: DaintyHands;
+    font-size: 16pt;
+
+}
+
+.type{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+.projectIntro{
+    background-color: lemonchiffon;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.pills{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pill1{
+    width: 70%;
+    margin-bottom: 20%;
+}
+
+.pill2{
+    width: 70%;
+}
+
+.pillClick{
+    display: flex;
+    justify-content: center;
+}
+
+.pillClick a:link{
+    text-decoration: none
+
+}
+
+.pillClick:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.readingsBody{
+background-color: lightpink;
+}
+
+.readingsIntro{
+    position: relative;
+}
+
+.response{
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    color:  #033249;
+    font-family: DaintyHands;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    height: 100%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    
+}
+
+.response span{
+    margin-left: 10%;
+    text-transform: uppercase;
+    font-size: 16pt;
+}
+
+.response p{
+    margin: 0% 10%;
+    font-size: 14pt;
+}
+
+
+.readingPics{
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: -1;
+}
+
+.studyLeft{
+
+width: 40%;
+}
+
+.studyRight{
+    width: 40%;
+    
+    }
+
+ .content{
+     background:#DEE0FF;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    height: 100%;
+    width: 100%;
+    grid-gap: 20px;
+}
+
+.contentTiles{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-row: 2 / 3;
+    max-width: 100%;
+}
+
+.contentTiles section {
+    border: solid 10px ghostwhite;
+    height: 100%;
+    width: 100%;
+    min-height: 300px;
+}
+
+.contentTiles section a {
+    width: 100%;
+    height: 100%;
+}
+
+article{
+    height: 100%;
+}
+
+.description {
+    position: relative;
+    text-align: center;
+    
+    
+}
+
+.description span {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-family: DaintyHands;
+    font-size: 26pt;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    z-index: 1;
+}
+
+.description:hover span {
+    display: block;
+    pointer-events: none;
+}
+
+.divImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 100%;
+    background-position: center;
+    filter: brightness(100%);
+}
+
+.divImage:hover{
+    filter: brightness(30%);
+}
+
+#S1 .divImage {
+    background: url(/Images/week1.png) no-repeat  center center;
+    background-size: cover;
+}
+
+#S2 .divImage{
+    background: url(/Images/week2.png) no-repeat  center center;
+    background-size: cover;
+}
+
+
+
+@media only screen and (min-width: 481px){
+
+    nav{
+        font-size: 26pt;
+    }
+    .logo{
+        padding-top: 10px;
+    }
+
+    .about{
+        font-size: 23pt;
+    }
+
+    .type{
+        width: 100%;
+    }
+
+
+    .response span{
+    
+        font-size: 26pt;
+    }
+    
+    .response p{
+        
+        font-size: 20pt;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 769px){
+
+    .study{
+        width: 50%;
+    }
+    .about{
+        padding: 10% 20%;
+    }
+
+    .type{
+        width: 47%;
+    }
+
+    .pill1{
+        width: 100%;
+        margin-bottom: 0%;
+        margin-right: 20%;
+    }
+    
+    .pill2{
+        width: 100%;
+    }
+
+    .response{
+        width: 50%;}
+
+    .studyLeft{
+
+        width: 30%;
+        }
+        
+    .studyRight{
+            width: 30%;
+            
+             }
+
+}
+
+
+
