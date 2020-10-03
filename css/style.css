@@ -322,7 +322,15 @@ article{
     background-size: cover;
 }
 
+#S3 .divImage{
+    background: url(/Images/week3.png) no-repeat  center center;
+    background-size: cover;
+}
 
+#S4 .divImage{
+    background: url(/Images/week4.png) no-repeat  center center;
+    background-size: cover;
+}
 
 @media only screen and (min-width: 481px){
 

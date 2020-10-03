@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffbac0;
+    transition: 0.2s;
+    position: relative;
+}
+
+.container.off{
+    background-color: #b87980;
+}
+ 
+
+#on, #off{
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden{
+    display: none;
+}
+ 
+
+img{
+    height: 100%;
+}
+
+img:hover{
+    cursor: pointer;
+}
