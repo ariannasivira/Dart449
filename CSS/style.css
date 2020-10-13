@@ -332,6 +332,12 @@ article{
     background-size: cover;
 }
 
+#S5 .divImage{
+    background: url(/Images/week5.png) no-repeat  center center;
+    background-size: cover;
+}
+
+
 @media only screen and (min-width: 481px){
 
     nav{

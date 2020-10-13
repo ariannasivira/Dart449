@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,400;1,900&display=swap');
+
+
+* {
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100vh;
+	font-weight: 400;
+}
+
+body {
+	background: url(/Homework/Week5/images/uncle-sam.jpg) no-repeat fixed center center;
+	background-size: cover;
+	font-family: 'Poppins', sans-serif;
+}
+
+div{
+    width:100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+section{
+	width: 50%;
+    text-align: center;
+	margin-top: 50%;
+	
+}
+
+
+h2 {
+	font-size: 29pt;
+	color: white;
+	font-weight: 900;
+	text-shadow: 3px 3px 0px rgba(0,0,0,.5);
+}
+
+h1 {
+	font-size: 65pt;
+	color: #fff;
+	line-height: 6vmax;
+	margin-bottom: 25px;
+	font-weight: 900;
+	text-shadow: 3px 3px 0px rgba(0,0,0,.5);
+}
+
+p{
+	color: white;
+	text-shadow: 1px 1px 0px rgba(14, 8, 63, 0.88);
+	margin-bottom: 10px;
+}
+
+input{
+	border: 3px solid lightgrey;
+    background-color: rgba(255,255,255,0.7);
+    color: #000;
+    border-radius: 40px;
+	padding: 10px 20px;
+	font-family: Poppins;
+	font-style: italic;
+}
+
+button {
+	font-weight: 900;
+    border: 3px solid darkred;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+	padding: 5px 20px;
+    font-family: Poppins;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+button:hover  {
+	background: #333;
+	color: #fff;
+}
+
+
+
+@media only screen and (min-width: 481px){
+
+h2{
+	font-size: 75pt;
+}
+
+h1{
+	font-size: 160pt;
+    color: #fff;
+    line-height: 8vmax;
+    margin-bottom: 65px;
+}
+
+input{
+	padding: 15px 30px;
+	font-size: 20pt;
+}
+
+p{
+	font-size: 23pt;
+}
+
+button{
+	font-size: 20pt;
+	padding: 10px 30px;
+}
+
+}
+
+@media only screen and (min-width: 769px){
+
+	section{
+		margin-top: 15%;
+		
+	}
+}
