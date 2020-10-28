@@ -1,0 +1,447 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-body{
+background: #f55152;
+}
+
+body{
+  background-color: #ede1cd;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+nav .hamburger {
+  z-index: 2;
+  position: absolute;
+  width: 35px;
+  top: 20px;
+  left: 20px;
+}
+
+
+nav.show-overlay .hamburger div:nth-child(1) {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+nav.show-overlay .hamburger div:nth-child(2) {
+  opacity: 0;
+}
+
+nav.show-overlay .hamburger div:nth-child(3) {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+
+nav.show-overlay .hamburger div {
+  background-color: white;
+}
+
+
+nav .hamburger div {
+  background-color: #151e27;
+  width: 35px;
+  height: 5px;
+  pointer-events: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav .hamburger div + div {
+  margin-top: 7px;
+}
+
+
+nav .overlay {
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e0917d;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ 
+  
+  
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ede1cd;
+  font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #000000,
+      2px 2px #000000,
+      3px 3px #000000;
+}
+
+nav.show-overlay .overlay{
+  width: 100%;
+
+}
+
+
+nav a{
+  padding: 20px;
+  text-decoration: none;
+  
+}
+
+nav a:link {
+  padding: 20px 40px;
+  color: #f55152;
+  flex-grow: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+
+}
+
+nav a:visited {
+  color: #faa15e;
+}
+
+
+
+.main-content{
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.mmwig{
+  width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+    animation: popUp 0.5s;
+}
+
+@keyframes popUp{
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+}
+100% {
+  transform: translateX(0);
+  opacity: 1;
+}
+}
+
+
+.titles{
+  width: 75%;
+    margin: 0 auto;
+    color: antiquewhite;
+}
+
+.titles h1{
+  font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  font-weight: 900;
+  text-align: center;
+  padding: 0 0 5px 0px;
+  font-size: 16pt;
+  
+
+
+}
+
+.titles p{
+  font-family:Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+    line-height: 16pt;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 5px;
+
+}
+
+
+
+
+.essay-body{
+  background-color: #eeeeee;
+}
+
+.essay{
+  width: 100vw;
+  height: 100%;
+  margin: 15% 0;
+  
+
+}
+
+.essay-content{
+  width: 80%;
+    margin: auto;
+    overflow-wrap: break-word;
+    color:  #262527;
+}
+
+.essay-content h1{
+  font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  font-weight: 900;
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 18pt;
+
+}
+
+.essay-content p{
+  font-family:Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-weight: 300;
+    padding: 10px 0;
+    font-size: 12pt;
+    line-height: 18pt;
+}
+
+
+
+
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+
+#moodboard {
+  padding-top: 5%;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  column-count: 1;
+  column-gap: 0;
+  background-color: #ede1cd;
+}
+
+#moodboard figure {
+  width: 100%;
+}
+
+#moodboard figure img {
+  width: 100%;
+  height: auto;
+}
+
+#moodboard a {
+  display: block;
+  padding: 0;
+}
+
+#moodboard a:hover {
+  filter: brightness(0.4);
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 481px){
+  #moodboard {
+    width: 90%;
+    column-count: 2;
+  }
+
+  .essay{
+    margin: 10% 0;
+  }
+  
+  .essay-content h1{
+    font-size: 25pt;
+  }
+
+  .essay-content p{
+    font-size: 14pt;
+    line-height: 22pt;
+  }
+
+    
+    .mmwig{
+      width: 60%;
+      
+    }
+    
+    
+    .titles h1{
+      padding: 0 0 5px 0px;
+      font-size: 31pt;
+      
+    
+    
+    }
+    
+    .titles p{
+      font-size: 18pt;
+        line-height: 22pt;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 769px){
+
+  body nav .hamburger {
+    display: none;
+}
+
+body nav .overlay {
+    position: unset;
+    width: unset;
+    background-color: unset;
+    z-index: unset;
+    overflow-x: unset;
+    display: block;
+}
+
+body nav .overlay .overlay-content {
+ 
+  flex-direction: row;
+  
+}
+
+
+  nav a{
+    padding: unset;
+    text-decoration: unset;
+    
+  }
+  
+ 
+  
+nav a:hover {
+     
+    text-shadow: 1px 1px #000000,
+      2px 2px #000000,
+      3px 3px #000000,
+      4px 4px #000000,
+      5px 5px #000000,
+      6px 6px #000000,
+      7px 7px #000000;
+  }
+  
+  #moodboard {
+    width: 100%;
+    column-count: 3;
+  }
+
+  .essay{
+    margin: 5% 0;
+  }
+  
+  .essay-content{
+    width: 55%;
+  }
+
+  .essay-content h1{
+    font-size: 30pt;
+  }
+
+  .essay-content p{
+    font-size: 16pt;
+    line-height: 24pt;
+  }
+
+.main-content{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+  .mmwig{
+    width: 41%;
+    margin: unset;
+    padding-top: unset;
+    margin-left: 20px;
+    
+  }
+
+  .titles{
+    width: 40%;
+  }
+  
+  
+  .titles h1{
+   text-align: left;
+    font-size: 25pt;
+    
+  
+  
+  }
+  
+  .titles p{
+   text-align: left;
+      
+  }
+
+}
