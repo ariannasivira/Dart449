@@ -342,6 +342,11 @@ article{
     background-size: cover;
 }
 
+#S7 .divImage{
+    background: url(/Images/Week7.png) no-repeat  center center;
+    background-size: cover;
+}
+
 
 @media only screen and (min-width: 481px){
 
