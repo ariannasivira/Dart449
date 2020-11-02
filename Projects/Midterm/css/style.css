@@ -102,7 +102,7 @@ nav a{
 
 nav a:link {
   padding: 20px 40px;
-  color: #f55152;
+  color: #faa15e;
   flex-grow: 1;
   text-align: center;
   text-decoration: none;
@@ -110,8 +110,9 @@ nav a:link {
 
 }
 
+
 nav a:visited {
-  color: #faa15e;
+  color: #4334fa;
 }
 
 
@@ -126,19 +127,25 @@ flex-direction: column;
   width: 80%;
     margin: 0 auto;
     padding-top: 60px;
-    animation: popUp 0.5s;
+    animation: slide-in-blurred-right 0.4s 0.1s ease-out;
 }
 
-@keyframes popUp{
+
+@keyframes slide-in-blurred-right {
   0% {
-    transform: translateX(200%);
+    transform: translateX(1000px) scaleX(2.5) scaleY(0.6);
+    transform-origin: 0% 50%;
+    filter: blur(60px);
     opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
 }
-100% {
-  transform: translateX(0);
-  opacity: 1;
-}
-}
+
 
 
 .titles{
@@ -172,9 +179,6 @@ flex-direction: column;
 
 
 
-.essay-body{
-  background-color: #eeeeee;
-}
 
 .essay{
   width: 100vw;
@@ -207,6 +211,78 @@ flex-direction: column;
     font-size: 12pt;
     line-height: 18pt;
 }
+
+
+
+.wireframe-container{
+  width: 100%;
+  height: 100%;
+
+}
+
+.wireframe-container figure{
+  position: relative;
+  
+
+}
+
+
+.wireframes-desktop{
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wireframe-container img{
+  width: 100%;
+  padding: 10% 0 0 0;
+  transition: all .2s ;
+  
+}
+
+.wireframe-container img:hover{
+  filter: brightness(0.3);
+
+}
+
+.wireframe-container img:hover+p{
+ 
+  pointer-events: none;
+  display: block;
+}
+
+
+.wireframe-container p{
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  z-index: 1;
+  font-family: Brandon Text,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  font-weight: 700;
+  text-align: center;
+  background-color: transparent;
+}
+
+
+.wireframes-phone figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wireframes-phone img{
+  width: 60%;
+}
+
 
 
 
@@ -288,6 +364,56 @@ flex-direction: column;
 }
 
 
+.body-mock{
+  height: 100%;
+}
+
+
+.mockup-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mockup-desktop{
+  width: 100%;
+  margin: 20% 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.mockup-container div+div{
+  padding-top: 20px;
+}
+
+.mockup-desktop img:hover{
+  width: 100%;
+}
+
+
+.mockup-desktop img{
+ width: 95%;
+ transition: all .3s ease-out;
+}
+
+.mockup-phone{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mockup-phone img{
+  width: 60%;
+  transition: all .3s ease-out;
+}
+
+.mockup-phone img:hover{
+  width:65%;
+}
 
 
 
@@ -335,6 +461,26 @@ flex-direction: column;
         
     }
 
+    .mockup-container{
+      margin: 10% 0 0 0;
+      flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    }
+
+    .mockup-desktop{
+      margin: 0 0% 0 45px;;
+    }
+
+    .mockup-container div+div{
+      padding-top: unset;
+    }
+
+    .mockup-phone{
+      width: 40%;
+      
+    }
+
 }
 
 
@@ -379,7 +525,7 @@ body nav .overlay .overlay-content {
  
   
 nav a:hover {
-     
+  color: #eee;
     text-shadow: 1px 1px #000000,
       2px 2px #000000,
       3px 3px #000000,
@@ -390,7 +536,7 @@ nav a:hover {
   }
   
   #moodboard {
-    width: 100%;
+    width: 90%;
     column-count: 3;
   }
 
@@ -442,6 +588,38 @@ nav a:hover {
   .titles p{
    text-align: left;
       
+  }
+.wireframe-container{
+  display: flex;
+  padding: 5% 0 0;
+}
+
+  .wireframe-container figure+figure{
+    padding-top: 20px;  
+  
+  }
+
+  .wireframes-desktop{
+    margin: 0 0 0 5%;
+    width: 80%;
+  }
+
+  .wireframes-desktop img{
+    /* width: 50%; */
+  }
+
+  .wireframe-container img{
+    padding: unset;
+  }
+
+
+  .wireframes-phone{
+    width: 40%;
+  }
+
+
+  .mockup-container{
+    margin: 5% 0 5% 0;
   }
 
 }
