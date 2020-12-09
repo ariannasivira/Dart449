@@ -293,46 +293,46 @@ body > section {
 }
 
 .alberta{
-    background: url(/images/provincesPhone/alberta.png) center center;
+    background: url(images/provincesPhone/alberta.png) center center;
 
 }
 
 .bc{
-    background: url(/images/provincesPhone/bc.png) center center;
+    background: url(images/provincesPhone/bc.png) center center;
 
 }
 
 .manitoba{
-    background: url(/images/provincesPhone/manitoba.png) center center;
+    background: url(images/provincesPhone/manitoba.png) center center;
 }
 
 .nb{
-    background: url(/images/provincesPhone/nb.png) center center;
+    background: url(images/provincesPhone/nb.png) center center;
 }
 
 .ns{
-    background: url(/images/provincesPhone/ns.png) center center;
+    background: url(images/provincesPhone/ns.png) center center;
 }
 
 .nwt{
-    background: url(/images/provincesPhone/nwt.png) center center;
+    background: url(images/provincesPhone/nwt.png) center center;
 }
 
 .ontario{
-    background: url(/images/provincesPhone/ontario.png) center center;
+    background: url(images/provincesPhone/ontario.png) center center;
 }
 
 .quebec{
-    background: url(/images/provincesPhone/quebec.png) center center;
+    background: url(images/provincesPhone/quebec.png) center center;
 }
 
 .sask{
-    background: url(/images/provincesPhone/sask.png) center center;
+    background: url(images/provincesPhone/sask.png) center center;
   
 }
 
 .yukon{
-    background: url(/images/provincesPhone/yukon.png) center center;
+    background: url(images/provincesPhone/yukon.png) center center;
    
 }
 
@@ -515,51 +515,51 @@ footer a:visited{
         }
 
         .alberta{
-            background: url(/images/provincesDesktop/albert.png) center;
+            background: url(images/provincesDesktop/albert.png) center;
         
         }
 
         .bc{
-            background: url(/images/provincesDesktop/bc.png) center;
+            background: url(images/provincesDesktop/bc.png) center;
         
         }
         .manitoba{
-            background: url(/images/provincesDesktop/manitoba.png)  center;
+            background: url(images/provincesDesktop/manitoba.png)  center;
         
         }
 
         .nb{
-            background: url(/images/provincesDesktop/nb.png)  center;
+            background: url(images/provincesDesktop/nb.png)  center;
         
         }
 
         .ns{
-            background: url(/images/provincesDesktop/nova.png) center;
+            background: url(images/provincesDesktop/nova.png) center;
         
         }
 
         .nwt{
-            background: url(/images/provincesDesktop/nw.png)  center;
+            background: url(images/provincesDesktop/nw.png)  center;
         
         }
 
         .ontario{
-            background: url(/images/provincesDesktop/ontario.png) right center;
+            background: url(images/provincesDesktop/ontario.png) right center;
         
         }
 
         .quebec{
-            background: url(/images/provincesDesktop/qc-01.png) center;
+            background: url(images/provincesDesktop/qc-01.png) center;
         
         }
 
         .sask{
-            background: url(/images/provincesDesktop/sask.png) center;
+            background: url(images/provincesDesktop/sask.png) center;
         
         }
 
         .yukon{
-            background: url(/images/provincesDesktop/yukon.png) center;
+            background: url(images/provincesDesktop/yukon.png) center;
         
         }
 
