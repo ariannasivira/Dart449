@@ -13,11 +13,13 @@ body{
     width: 100%;
 }
 
-.wrapper{
+
+
+html{
     scroll-snap-type: y mandatory;
 }
  
-.wrapper section{
+.wrapper > section{
     scroll-snap-align: start;
  }
 
