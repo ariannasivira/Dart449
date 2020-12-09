@@ -1,0 +1,140 @@
+
+
+.slide-up {
+    opacity: 0;
+    transform: translateX(2em);
+    transition: all .2s .4s ease-out;
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(2em);
+    transition: all .7s .7s ease-out;
+}
+
+.slide-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    
+}
+
+
+.slide-up.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+    
+}
+
+.slide-up-slower {
+    opacity: 0;
+    transform: translateX(2em);
+    transition: all .6s .6s ease-out;
+}
+
+.slide-up-slower.is-visible{
+    opacity: 1;
+    transform: translateX(0);
+    
+}
+
+.slide-up-slowest {
+    opacity: 0;
+    transform: translateX(2em);
+    transition: all .7s .7s ease-out;
+}
+
+.slide-up-slowest.is-visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.popUp{
+    opacity: 0;
+    height: 0%;
+    transition: all .6s .6s ease-out;
+}
+
+.popUp.is-visible{
+    opacity: 1;
+    height: 9%;
+    
+}
+
+
+
+
+
+.slide-in-right {
+	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+    @keyframes slide-in-right {
+        0% {
+          transform: translateX(1000px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0%);
+          opacity: 1;
+        }
+      }
+
+      .rotate-in-center {
+        animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        height: 100%;
+    }
+
+    @keyframes rotate-in-center {
+        0% {
+          transform: rotate(-360deg);
+          opacity: 0;
+        }
+        100% {
+          transform: rotate(0);
+          opacity: 1;
+        }
+      }
+
+
+
+
+      @media only screen and (min-width: 481px){
+
+      @keyframes slide-in-right {
+        0% {
+          transform: translateX(1000px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(-15%);
+          opacity: 1;
+        }
+      }
+
+    }
+
+    @media only screen and (min-width: 769px){
+        @keyframes slide-in-right {
+            0% {
+              transform: translateX(1000px);
+              opacity: 0;
+            }
+            100% {
+              transform: translateX(-10%);
+              opacity: 1;
+            }
+          }
+    
+        }
+
+    
+            
+        
+
+
+      
+            
+      
+      
+      

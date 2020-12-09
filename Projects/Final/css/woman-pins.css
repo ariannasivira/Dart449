@@ -1,0 +1,63 @@
+#s3 div.womanPin {
+    height: 35px;
+    width: 17px;
+    display: inline-block;
+    position: absolute;
+}
+
+.womanPin img {
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+.womanPin.fadeOut, .faces.fadeOut{
+    opacity: 0%;
+    animation: fadeOut;
+    cursor: pointer;
+    animation-duration: .6s;
+}
+
+.stories.fadeIn{
+    animation: fadeIn;
+    cursor: pointer;
+    animation-duration: .6s;
+}
+
+
+@keyframes fadeOut {
+
+    0% {opacity: 100%;}
+
+    100% {opacity: 0%;}
+}
+
+
+@keyframes fadeIn {
+
+    0% {opacity: 0%;}
+
+    100% {opacity: 100%;}
+}
+
+
+@media only screen and (min-width: 481px){
+    
+    #s3 div.womanPin {
+        height: 55px;
+        width: 27px;
+        } 
+    
+}
+
+
+@media only screen and (min-width: 769px){
+
+   #s3 div.womanPin {
+    height: 70px;
+    width: 34px;
+    } 
+
+}
+

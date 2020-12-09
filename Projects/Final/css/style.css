@@ -1,0 +1,720 @@
+@import url("https://use.typekit.net/soz3nzo.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,400;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100%;
+    
+}
+
+body > section {
+    scroll-snap-align: start;
+}
+
+#s1{
+    position: relative;
+    height: 100vh;
+    background-color: #fda0a1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#logo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 3%;
+    left: 4%;
+}
+
+#title1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: new-spirit, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f7eee5;
+    font-size: 31pt;
+    padding: 20% 0% 0% 0%;
+    text-align: center;
+}
+
+
+
+.wrapNumbers {
+    display: grid;
+    grid-template: 1fr/1fr ;
+    place-items: center;
+    cursor: pointer;
+    padding-top: 30px;
+    width: fit-content;
+}
+
+.numberNew {
+    opacity: 0;
+    color:#dd564b ;
+}
+
+.numberOld, .numberNew {
+    transition: opacity 0.3s linear;
+    font-size: 75pt;
+    line-height: 65pt;
+    grid-column: 1/1;
+    grid-row: 1/1;
+       
+
+}
+
+.wrapNumbers:hover .numberOld {
+    opacity: 0;
+}
+.wrapNumbers:hover .numberNew {
+    opacity: 1;
+}
+
+
+#title1 #gone{
+    font-size: 22pt;
+}
+
+#title1 #rcmp{
+    font-size: 12pt;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#bigHand{
+    position: absolute;
+    width: 95%;
+    height: auto;
+    right: 0%;
+    bottom: 1%;
+    
+    
+}
+
+#s2 {
+    height: 100vh;
+    background-color: #f7eee5;
+    overflow-y: hidden;
+    position: relative;
+    font-family: new-spirit, serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#title2{
+    margin: 20% 0% 0%;
+}
+
+#title2 h1{
+    font-size: 36pt;
+    color: #fda0a1;
+    line-height: 38pt;
+}
+
+#title2 p{
+    font-size: 14pt;
+    padding-bottom: 15%;
+    color: #dd564b;
+}
+
+
+
+
+#helpLink:visited{
+    color: darkred;
+}
+
+#helpLink {
+    font-weight: 400;
+    border: 3px solid #dd564b;
+    background-color: rgba(221,86,75,0.4);
+    color: white;
+    border-radius: 40px;
+    padding: 18px;
+    font-family: Poppins;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+
+}
+
+
+#helpLink:hover{
+    border: 3px solid white;
+    background-color: rgba(255, 253, 253, 0.863);
+    border-radius: 30px;
+    padding: 20px;
+    color: #dd564b;
+}
+
+
+.canadaContainer{
+    width: 95%;
+    height: auto;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+
+.redHands{
+    display: contents;
+   
+}
+
+.hands{
+    position: absolute;
+    cursor: pointer;
+    height: 9%;
+    
+}
+
+.hands.popUp.is-visible:hover{
+    height: 13%;
+    filter: brightness(5); 
+    transition:  0.3s;
+}
+
+#hand1{
+    top: 28%;
+    left: 9%;
+}
+
+#hand2{
+    top: 53%;
+    left: 7%;
+}
+
+#hand3{
+    top: 38%;
+    left: 24%;
+}
+
+#hand4{
+    bottom: 34%;
+    left: 17%;
+}
+
+#hand5{
+    bottom: 27%;
+    left: 26%;
+}
+
+#hand6{
+    bottom: 32%;
+    left: 37%;
+}
+
+#hand7{
+    bottom: 19%;
+    left: 48%;
+}
+
+#hand8{
+    bottom: 25%;
+    left: 66%;
+}
+
+#hand9{
+    bottom: 16%;
+    right: 15%;
+}
+
+#hand10{
+    bottom: 14%;
+    right: 7%;
+}
+
+
+
+#canadaMap{
+    width: 100%;
+    bottom: 3%;
+    
+}
+
+#s3{
+    height: 100vh;
+    position: relative;
+}
+
+.hidden{
+    display: none !important;
+}
+
+#s3 figure {
+    position: absolute;
+    width: 35%;
+}
+
+.faces{
+    /* display: none; */
+    width: 100%;
+    cursor: pointer;
+
+} 
+
+.stories{
+    display: none;
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 8pt;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #dd564b;
+    padding: 15px;
+}
+
+
+
+#s3>div{
+    height: 100%;
+    background-size: cover;
+}
+
+#s3>img{
+    height: 50px;
+}
+
+.alberta{
+    background: url(/images/provincesPhone/alberta.png) center center;
+
+}
+
+.bc{
+    background: url(/images/provincesPhone/bc.png) center center;
+
+}
+
+.manitoba{
+    background: url(/images/provincesPhone/manitoba.png) center center;
+}
+
+.nb{
+    background: url(/images/provincesPhone/nb.png) center center;
+}
+
+.ns{
+    background: url(/images/provincesPhone/ns.png) center center;
+}
+
+.nwt{
+    background: url(/images/provincesPhone/nwt.png) center center;
+}
+
+.ontario{
+    background: url(/images/provincesPhone/ontario.png) center center;
+}
+
+.quebec{
+    background: url(/images/provincesPhone/quebec.png) center center;
+}
+
+.sask{
+    background: url(/images/provincesPhone/sask.png) center center;
+  
+}
+
+.yukon{
+    background: url(/images/provincesPhone/yukon.png) center center;
+   
+}
+
+#helpBod{
+    background-color:#f7eee5;
+    /* position: relative; */
+}
+
+#contentWrapper {
+    
+    height: 100%;
+    padding-top: 15%;
+    
+}
+
+#contentWrapper img {
+    width: 100%;
+   
+}
+
+.howHelp #write{
+    width: 80%;
+}
+
+
+.howHelp{
+    width: 75%;
+    margin: auto;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.howHelp img{
+    padding-bottom: 10px;
+    
+}
+
+.howHelp span{
+    text-align: center;
+    font-family: new-spirit, serif;
+    font-weight: 300;
+    color: #fda0a1;
+    font-size: 14pt;
+}
+
+#backArrow {
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    font-family: new-spirit, serif;
+    font-weight: 300;
+    color: #fda0a1;
+    font-size: 60pt;
+    transform: translateX(-50%);
+    left: 50%;
+    padding-bottom: 20px;
+    transition: all 0.3s;
+    text-shadow: 0 0 9px #f7c5c6;
+}
+    
+
+
+#backArrow:hover{
+    filter: brightness(0.3);
+    font-size: 70pt;
+    
+}
+
+#letter:hover{
+    transform: scale(1.1); 
+    transition: 0.3s;
+}
+
+footer{
+    height: 70px;
+    background-color:#f7eee5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* scroll-snap-align: start; */
+    /* box-shadow: 0px -39px 99px 135px rgba(247,238,229,1); */
+   
+   
+}
+
+footer p{
+    text-align: center;
+    font-family: new-spirit, serif;
+    font-weight: 300;
+    color: #fda0a1;
+    font-size: 14pt;    
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #dd564b;
+}
+
+footer a:visited{
+    color: #fda0a1
+}
+
+
+
+@media only screen and (min-width: 481px){
+
+    #logo{
+        
+        width: 60px;
+        height: 60px;
+        
+       
+    }
+
+    #title1{
+        font-size: 45pt;
+        padding: 11% 0% 0% 0%;
+        }
+
+        #bigHand{
+            width: 80%;
+            bottom: 2%;
+            
+        }
+
+
+        #title1 .wrapNumbers span{
+            font-size: 100pt;
+            line-height: 84pt;
+            padding-top: 20px;
+        }
+        
+        
+        #title1 #gone{
+            font-size: 29pt;
+        }
+
+        #title1 #rcmp{
+            font-size: 17pt;
+            
+        }
+
+
+        .canadaContainer {
+            width: 90%;
+            bottom: 5%;
+            transform: translateX(-50%);
+            left: 50%;
+        }
+
+        #title2{
+            padding: unset;
+        }
+
+        #title2 p {
+            font-size: 23pt;
+            padding-bottom: 7%;
+        }
+
+        #helpLink {
+            border-radius: 50px;
+            padding: 25px;
+            font-size: 13pt;
+        }
+
+        .howHelp span {
+            font-size: 23pt;
+        }
+
+        .howHelp img {
+            padding-bottom: 25px;
+        }
+
+        #s3 figure {
+            width: 30%;
+        }
+
+        .alberta{
+            background: url(/images/provincesDesktop/albert.png) center;
+        
+        }
+
+        .bc{
+            background: url(/images/provincesDesktop/bc.png) center;
+        
+        }
+        .manitoba{
+            background: url(/images/provincesDesktop/manitoba.png)  center;
+        
+        }
+
+        .nb{
+            background: url(/images/provincesDesktop/nb.png)  center;
+        
+        }
+
+        .ns{
+            background: url(/images/provincesDesktop/nova.png) center;
+        
+        }
+
+        .nwt{
+            background: url(/images/provincesDesktop/nw.png)  center;
+        
+        }
+
+        .ontario{
+            background: url(/images/provincesDesktop/ontario.png) right center;
+        
+        }
+
+        .quebec{
+            background: url(/images/provincesDesktop/qc-01.png) center;
+        
+        }
+
+        .sask{
+            background: url(/images/provincesDesktop/sask.png) center;
+        
+        }
+
+        .yukon{
+            background: url(/images/provincesDesktop/yukon.png) center;
+        
+        }
+
+        #s3 figure p{
+            font-size: 11pt;
+        }
+
+    
+  
+}
+
+@media only screen and (min-width: 1025px){
+
+    #logo{
+        
+        width: 70px;
+        height: 70px;
+        top: 2%;
+        left: unset;
+        right: 2%;
+    }
+
+         #title1{
+        font-size: 40pt;
+        padding: 13% 0% 0% 5%;
+        text-align: unset;
+        align-items: unset;
+        }
+
+        #bigHand{
+        width: 60%;
+        right: -10%;
+        top: 5%;
+        }
+
+
+        #title1 .wrapNumbers span{
+            font-size: 115pt;
+            line-height: 115pt;
+            padding-top: 2%;
+        }
+        
+        
+        #title1 #gone{
+            font-size: 35pt;
+        }
+
+        #title1 #rcmp{
+            font-size: 20pt;
+            
+        }
+
+
+        .canadaContainer {
+            width: 72%;
+            bottom: 50%;
+            transform: translateY(50%);
+            left: 1%;
+        }
+
+        #title2 {
+            margin: 15% 0% 0%;
+            position: absolute;
+            right: 5%;
+            width: 35%;
+            text-align: right;
+        }
+
+        #title2 h1 {
+            font-size: 50pt;
+            line-height: 50pt;
+        }
+
+
+        #title2 p {
+            font-size: 19pt;
+            padding-bottom: 15%;
+        }
+
+        #helpLink {
+            border-radius: 50px;
+            padding: 25px;
+            font-size: 13pt;
+            
+        }
+
+        #helpLink:hover{
+        
+            border-radius: 60px;
+            padding: 30px;
+        }
+
+        #contentWrapper {
+            padding-top: unset;
+            position: relative;
+            height: 200vh;
+        }
+
+        .howHelp{
+            position: absolute;
+            width: 26%;
+            margin: auto;
+            padding-bottom: 60px;
+            display: flex;
+            flex-direction: column;    
+        }
+        
+        .howHelp img{
+            padding-bottom: 10px;
+        }
+
+        #protest{
+            top: 7%;
+            left: 15%;
+        }
+
+        #learn{
+            top: 30%;
+            right: 12%;
+        }
+
+        #letter{
+            bottom: 18%;
+            left: 15%;
+        }
+        
+
+        #share{
+            bottom: -5%;
+            right: 12%;
+        }
+
+        /* .howHelp span {
+            font-size: 23pt;
+        }
+
+        .howHelp img {
+            padding-bottom: 25px;
+        } */
+
+        #backArrow {
+            font-size: 100pt;
+            left: 10%;
+            bottom: 0%;
+            
+            
+        }
+            
+        
+        #backArrow:hover{
+            font-size: 110pt;
+            bottom: -5px;
+        }
+
+        #s3 figure {
+            width: 15%;
+        }
+}
